@@ -4,6 +4,7 @@ body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
   color: #868e96;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -79,12 +80,15 @@ p.lead {
   color: #BD5D38;
 }
 
-
+#landing_image{
+  max-width: 100%;
+}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-family: 'Charm', cursive;
   /* font-weight: 800; */
   font-size: 2em;
+  /* width: 17rem; */
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   background-color: white;
@@ -118,8 +122,10 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 #landing{
-  background-image: url("../images/typewriter.jpg");
-  background-size: cover;
+  /* background-image: url("../images/typewriter.jpg");
+  background-size: cover; */
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 section.resume-section {
