@@ -38,4 +38,13 @@ par = ".par-"
                       }
     });
 
+    document.querySelector(exp + "2").addEventListener('click', function() {
+      var paragraph = document.querySelector(par + "2")
+      if (paragraph.style.display === "none") {
+                      paragraph.style.display = "block";
+                    } else {
+                      paragraph.style.display = "none";
+                    }
+  });
+
    
