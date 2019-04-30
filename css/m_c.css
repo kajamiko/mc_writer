@@ -160,6 +160,21 @@ footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+.card {
+  display: inline-block;
+}
+.card img {
+  height: 300px;
+  margin: 0 auto;
+}
+
 
 /* *********************  min width 992   ****************************************** */
 @media (min-width: 992px) {
