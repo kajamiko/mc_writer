@@ -3,22 +3,6 @@ var exp, par;
 exp = ".exp-";
 par = ".par-"
 
-// var i;
-
-// function expand_paragraph(i) {
-//     var paragraph = document.querySelector(par + i)
-//     if (paragraph.style.display === "none") {
-//         paragraph.style.display = "block";
-//       } else {
-//         paragraph.style.display = "none";
-//       };
-// }
-
-// for(i = 0; i<2; i++ ){
-//     document.querySelector(exp + i).addEventListener('click', function() {
-//         expand_paragraph(i);
-// });
-// }
 
 
     document.querySelector(exp + "0").addEventListener('click', function() {

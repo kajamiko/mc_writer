@@ -167,14 +167,61 @@ footer {
 
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* .scrolling-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+​ */
+
 .card {
   display: inline-block;
 }
 .card img {
   height: 300px;
-  margin: 0 auto;
 }
 
+.card-grid {
+  display: inline-block;
+}
+
+.card-grid img {
+  height: 300px;
+}
+
+.row-gall {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 /* *********************  min width 992   ****************************************** */
 @media (min-width: 992px) {
@@ -233,14 +280,31 @@ footer {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
+  .card-grid {
+    width: 30%;
+    
+  }
 
 } 
 /* end of min 992 section */
 
 /* *********************  min width 768   ****************************************** */
 
-
 @media (min-width: 768px) {
+  .row-gall {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-grid {
+    width: 25%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  }
+  .card-grid img {
+    height: 100px;
+  }
   section.resume-section {
     min-height: 100vh;
   }
